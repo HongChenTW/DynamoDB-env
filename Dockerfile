@@ -5,7 +5,6 @@ WORKDIR /var/www/html
 RUN apt-get update
 
 #php pdo prerequisites
-RUN docker-php-ext-install pdo pdo_mysql
 COPY ./index.php /var/www/html/index.php
 
 RUN apt-get -y install python3 vim
